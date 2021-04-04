@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Addition_Activity">
+    tools:context=".Subraction_Activity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
             android:textSize="40sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:text="2 + 5"/>
+            android:text="5 - 2"/>
         <GridLayout
             android:id="@+id/gridLayoutView"
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:background="#F44336"
                 android:onClick="chooseAnswer"
                 android:tag="0"
-                android:text="4"
+                android:text="8"
                 android:textSize="80sp"
                 android:layout_column="0"
                 android:layout_row="0"
@@ -89,7 +89,7 @@
                 android:background="@android:color/holo_purple"
                 android:onClick="chooseAnswer"
                 android:tag="1"
-                android:text="6"
+                android:text="1"
                 android:textSize="80sp"
                 android:layout_row="0"
                 android:layout_gravity="fill" />
@@ -103,7 +103,7 @@
                 android:background="@android:color/holo_green_light"
                 android:onClick="chooseAnswer"
                 android:tag="2"
-                android:text="7"
+                android:text="4"
                 android:textSize="80sp"
                 android:layout_column="0"
                 android:layout_row="1"
@@ -153,36 +153,36 @@
             android:textSize="20sp" />
 
 
-            <Button
-                    android:id="@+id/levelSelectionButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/playAgainButton"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:background="#ff0099cc"
-                    android:onClick="levelSelectionBtn"
-                    android:padding="5dp"
-                    android:text="Change Level"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+        <Button
+            android:id="@+id/levelSelectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playAgainButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#ff0099cc"
+            android:onClick="levelSelectionBtn"
+            android:padding="5dp"
+            android:text="Change Level"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <Button
-                    android:id="@+id/mainMenuBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/playAgainButton"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="20dp"
-                    android:background="#52B856"
-                    android:onClick="mainMenuBtn"
-                    android:padding="5dp"
-                    android:text="Main Menu"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+            android:id="@+id/mainMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playAgainButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="#52B856"
+            android:onClick="mainMenuBtn"
+            android:padding="5dp"
+            android:text="Main Menu"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
 
     </RelativeLayout>

@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Subraction_Activity"
+            android:parentActivityName=".Second_page"/>
         <activity
             android:name=".Addition_Activity"
-            android:parentActivityName=".Second_page"/>
-        <activity android:name=".Level_Selection"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Second_page"
-            android:parentActivityName=".Level_Selection"/>
+            android:parentActivityName=".Second_page" />
+        <activity
+            android:name=".Level_Selection"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Second_page"
+            android:parentActivityName=".Level_Selection" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

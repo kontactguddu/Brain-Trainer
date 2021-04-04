@@ -13,6 +13,10 @@ public class Second_page extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void subtraction(View view){
+        Intent intent = new Intent(this, Subraction_Activity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

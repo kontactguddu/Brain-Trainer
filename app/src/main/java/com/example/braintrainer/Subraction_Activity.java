@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Addition_Activity extends AppCompatActivity {
+public class Subraction_Activity extends AppCompatActivity {
 
     TextView timerTextView, sumTextView, scoreTextView, resultTextView, levelTextView;
     ArrayList<Integer> answers = new ArrayList<Integer>();
@@ -21,11 +21,6 @@ public class Addition_Activity extends AppCompatActivity {
     int score = 0;
     int totalQuestion;
     Button playAgainButton, levelSelector, mainMenuSelector;
-
-    public int timeForTimer;
-
-
-
 
     public void chooseAnswer(View view){
         resultTextView.setVisibility(View.VISIBLE);
@@ -45,19 +40,25 @@ public class Addition_Activity extends AppCompatActivity {
         int a = rand.nextInt(21);       // select integer between 0 to 20 total 21 numbers
         int b = rand.nextInt(21);
 
-        sumTextView.setText(Integer.toString(a) +" + " + Integer.toString(b));      // set new question
+        sumTextView.setText(Integer.toString(a) +" - " + Integer.toString(b));      // set new question
         locationOfCorrectAnswer = rand.nextInt(4);              // location of answer is varying
 
         answers.clear();            // to delete all previous saved value in array
 
         for(int i=0; i<4; i++){
             if(i == locationOfCorrectAnswer){
-                answers.add(a+b);
+                answers.add(a-b);
             }else {
-                int wrongAnswer = rand.nextInt(41);
-                while(wrongAnswer == a+b){
-                    wrongAnswer = rand.nextInt(41);
+                int wrongAnswer = rand.nextInt(21);
+                while(wrongAnswer == a-b){
+                    wrongAnswer = rand.nextInt(21);
+                    for(int j=0; j<i; j++){
+                        if(wrongAnswer == answers.get(j)){
+                            wrongAnswer = rand.nextInt(21);
+                        }
+                    }
                 }
+
                 answers.add(wrongAnswer);
             }
         }
@@ -66,6 +67,7 @@ public class Addition_Activity extends AppCompatActivity {
         button2.setText(Integer.toString(answers.get(2)));
         button3.setText(Integer.toString(answers.get(3)));
     }
+
     public void playAgain(View view){
         score = 0;
         totalQuestion = 0;
@@ -81,7 +83,7 @@ public class Addition_Activity extends AppCompatActivity {
 
 
         newQuestion();
-        new CountDownTimer(60100, 1000){
+        new CountDownTimer(30100, 1000){
 
             @Override
             public void onTick(long l) {
@@ -112,12 +114,10 @@ public class Addition_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, Level_Selection.class);
         startActivity(intent);
     }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addition_);
+        setContentView(R.layout.activity_subraction_);
 
         timerTextView = findViewById(R.id.timerTextView);
         sumTextView = findViewById(R.id.sumTextView);
@@ -131,15 +131,7 @@ public class Addition_Activity extends AppCompatActivity {
         playAgainButton = findViewById(R.id.playAgainButton);
         levelTextView = findViewById(R.id.levelTextView);
 
-         levelSelector = findViewById(R.id.levelSelectionButton);
-         mainMenuSelector = findViewById(R.id.mainMenuBtn);
-
-
-
-
-
-
-
-
+        levelSelector = findViewById(R.id.levelSelectionButton);
+        mainMenuSelector = findViewById(R.id.mainMenuBtn);
     }
 }

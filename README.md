@@ -2,13 +2,21 @@
 Gaming app for those who want to train their brain
 
 ## App Details
-1. Front page UI is powered by Main_Activity.java and activity_main.xml
-![](images/Screenshot(318).png)
-
+1. Front page UI is powered by Main_Activity.java and activity_main.xml<br>
 2. level selection page is controlled by Level_Selection.java and activity_level_selection.xml
-4. Maths operator page is controlled by Second_page.java and activity_second_page.xml
-5. addition page is controlled by addition activity.
-6. subtraction page is controlled by subtaction activity
+3. Maths operator page is controlled by Second_page.java and activity_second_page.xml
+4. addition page is controlled by addition activity.
+5. subtraction page is controlled by subtaction activity
+<span>
+<img src="/images/frontPage.png" width="150px" height="300px">
+<img src="/images/levelPage.png" width="150px" height="300px">
+<img src="/images/operatorPage.png" width="150px" height="300px">
+<img src="/images/gameState.png" width="150px" height="300px">
+<img src="/images/gameState2.png" width="150px" height="300px">
+</span>
+
+## Comment
+It will help to track my progress.
 
 ## Work under progress
 1. create the activity for multiplication, division and mixed problems

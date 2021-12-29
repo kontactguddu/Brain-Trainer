@@ -8,6 +8,7 @@ Gaming app for those who want to train their brain
 4. addition page is controlled by addition activity.
 
 <span>
+<img src="/images/googleSign.jpg" width="150px" height="300px">
 <img src="/images/frontPage.png" width="150px" height="300px">
 <img src="/images/levelPage.png" width="150px" height="300px">
 <img src="/images/operatorPage.png" width="150px" height="300px">

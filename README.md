@@ -13,7 +13,7 @@ Gaming app for those who want to train their brain
 <img src="/images/levelPage.png" width="150px" height="300px">
 <img src="/images/operatorPage.png" width="150px" height="300px">
 <img src="/images/gameState.png" width="150px" height="300px">
-<img src="/images/gameState2.png" width="150px" height="300px">
+
 </span>
 
 ## Comment

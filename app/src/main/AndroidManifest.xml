@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.braintrainer">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,23 +13,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Subraction_Activity"
-            android:parentActivityName=".Second_page"/>
-        <activity
-            android:name=".Addition_Activity"
-            android:parentActivityName=".Second_page" />
-        <activity
-            android:name=".Level_Selection"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Second_page"
-            android:parentActivityName=".Level_Selection" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SignIn_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.Operator"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".setting.Setting"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Subraction_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Addition_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".setting.Level_Selection"
+            android:parentActivityName=".setting.Setting" />
+
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

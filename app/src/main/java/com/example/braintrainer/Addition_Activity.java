@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.braintrainer.setting.Level_Selection;
+import com.example.braintrainer.setting.Operator;
+import com.example.braintrainer.setting.Setting;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -20,11 +24,14 @@ public class Addition_Activity extends AppCompatActivity {
     int locationOfCorrectAnswer;
     int score = 0;
     int totalQuestion;
-    Button playAgainButton, levelSelector, mainMenuSelector;
+    Button playAgainButton, settingButton, mainMenuSelector;
 
-    public int timeForTimer;
+    // object of Level_Selection.
+    Level_Selection level_selection = new Level_Selection();
 
+    int timeForTimer = level_selection.getTimerTime();
 
+    String difficultyTag = level_selection.getDifficultiesTag();
 
 
     public void chooseAnswer(View view){
@@ -69,19 +76,19 @@ public class Addition_Activity extends AppCompatActivity {
     public void playAgain(View view){
         score = 0;
         totalQuestion = 0;
-        timerTextView.setText("30s");
+        timerTextView.setText((Integer.toString(timeForTimer)) + "s");
         scoreTextView.setText(Integer.toString(score)+"/"+Integer.toString(totalQuestion));
         playAgainButton.setVisibility(View.INVISIBLE);
         resultTextView.setVisibility(View.INVISIBLE);
         mainMenuSelector.setVisibility(View.INVISIBLE);
-        levelSelector.setVisibility(View.INVISIBLE);
+        settingButton.setVisibility(View.INVISIBLE);
         playAgainButton.setText("Play Again");
-        levelTextView.setText("Warmup");
+        levelTextView.setText(level_selection.getDifficultiesTag());
         button0.setEnabled(true);button1.setEnabled(true);button2.setEnabled(true);button3.setEnabled(true);
 
 
         newQuestion();
-        new CountDownTimer(60100, 1000){
+        new CountDownTimer(10100, 1000){
 
             @Override
             public void onTick(long l) {
@@ -93,7 +100,7 @@ public class Addition_Activity extends AppCompatActivity {
                 resultTextView.setText("Time up!");
                 playAgainButton.setVisibility(View.VISIBLE);
                 resultTextView.setVisibility(View.VISIBLE);
-                levelSelector.setVisibility(View.VISIBLE);
+                settingButton.setVisibility(View.VISIBLE);
                 mainMenuSelector.setVisibility(View.VISIBLE);
 
                 button0.setEnabled(false);button1.setEnabled(false);button2.setEnabled(false);button3.setEnabled(false);
@@ -105,13 +112,10 @@ public class Addition_Activity extends AppCompatActivity {
     }
 
     public void mainMenuBtn(View view){
-        Intent intent = new Intent(this, Second_page.class);
+        Intent intent = new Intent(this, Operator.class);
         startActivity(intent);
     }
-    public void levelSelectionBtn(View view){
-        Intent intent = new Intent(this, Level_Selection.class);
-        startActivity(intent);
-    }
+    
 
 
     @Override
@@ -130,16 +134,14 @@ public class Addition_Activity extends AppCompatActivity {
         resultTextView = findViewById(R.id.resultTextView);
         playAgainButton = findViewById(R.id.playAgainButton);
         levelTextView = findViewById(R.id.levelTextView);
-
-         levelSelector = findViewById(R.id.levelSelectionButton);
-         mainMenuSelector = findViewById(R.id.mainMenuBtn);
-
+        settingButton = findViewById(R.id.settingButton);
+        mainMenuSelector = findViewById(R.id.mainMenuBtn);
 
 
+    }
 
-
-
-
-
+    public void settingBtn(View view) {
+        Intent i = new Intent(this, Setting.class);
+        startActivity(i);
     }
 }

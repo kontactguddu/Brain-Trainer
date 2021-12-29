@@ -6,7 +6,7 @@ Gaming app for those who want to train their brain
 2. level selection page is controlled by Level_Selection.java and activity_level_selection.xml
 3. Maths operator page is controlled by Second_page.java and activity_second_page.xml
 4. addition page is controlled by addition activity.
-5. subtraction page is controlled by subtaction activity
+
 <span>
 <img src="/images/frontPage.png" width="150px" height="300px">
 <img src="/images/levelPage.png" width="150px" height="300px">

@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Brain Trainer</string>
+    <string name="brain_trainer">Brain Trainer</string>
+    <string name="_30s">30s</string>
+    <string name="level">Level</string>
+    <string name="_0_0">0/0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_10">10</string>
+
+    <string name="_5_2">5 - 2</string>
+    <string name="_2_5">2 + 5</string>
+
+
+    <string name="correct">Correct :)</string>
+    <string name="start">Start</string>
+    <string name="change_level">Change Level</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="warmup">Warmup</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="tough">Tough</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+    <string name="mixed_problem">Mixed Problem</string>
+    <string name="about">About</string>
+    <string name="sound">Sound</string>
+    <string name="high_score">High Score</string>
+    <string name="operation">Operation</string>
+    <string name="settings">Settings</string>
+
+
 </resources>

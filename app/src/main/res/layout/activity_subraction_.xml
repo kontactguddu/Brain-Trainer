@@ -18,7 +18,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:background="#FFC107"
-            android:text="30s"
+            android:text="@string/_30s"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -30,7 +30,7 @@
             android:layout_toLeftOf="@+id/scoreTextView"
             android:layout_toRightOf="@+id/timerTextView"
             android:background="@android:color/darker_gray"
-            android:text="Level"
+            android:text="@string/level"
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="25sp"
@@ -43,7 +43,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:background="#03A9F4"
-            android:text="0/0"
+            android:text="@string/_0_0"
             android:textSize="25sp"
             android:textStyle="bold" />
         <TextView
@@ -57,7 +57,7 @@
             android:textSize="40sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:text="5 - 2"/>
+            android:text="@string/_5_2"/>
         <GridLayout
             android:id="@+id/gridLayoutView"
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:background="#F44336"
                 android:onClick="chooseAnswer"
                 android:tag="0"
-                android:text="8"
+                android:text="@string/_8"
                 android:textSize="80sp"
                 android:layout_column="0"
                 android:layout_row="0"
@@ -89,7 +89,7 @@
                 android:background="@android:color/holo_purple"
                 android:onClick="chooseAnswer"
                 android:tag="1"
-                android:text="1"
+                android:text="@string/_1"
                 android:textSize="80sp"
                 android:layout_row="0"
                 android:layout_gravity="fill" />
@@ -103,7 +103,7 @@
                 android:background="@android:color/holo_green_light"
                 android:onClick="chooseAnswer"
                 android:tag="2"
-                android:text="4"
+                android:text="@string/_4"
                 android:textSize="80sp"
                 android:layout_column="0"
                 android:layout_row="1"
@@ -118,7 +118,7 @@
                 android:background="@android:color/holo_blue_dark"
                 android:onClick="chooseAnswer"
                 android:tag="3"
-                android:text="3"
+                android:text="@string/_3"
                 android:textSize="80sp"
                 android:layout_column="1"
                 android:layout_gravity="fill"
@@ -133,7 +133,7 @@
             android:layout_below="@+id/gridLayoutView"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Correct :)"
+            android:text="@string/correct"
             android:textColor="#EC0808"
             android:textSize="25sp"
             android:textStyle="italic" />
@@ -148,13 +148,13 @@
             android:background="#FB1866"
             android:onClick="playAgain"
             android:padding="5dp"
-            android:text="Start"
+            android:text="@string/start"
             android:textAlignment="center"
             android:textSize="20sp" />
 
 
         <Button
-            android:id="@+id/levelSelectionButton"
+            android:id="@+id/settingButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/playAgainButton"
@@ -162,9 +162,9 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:background="#ff0099cc"
-            android:onClick="levelSelectionBtn"
+            android:onClick="settingBtn"
             android:padding="5dp"
-            android:text="Change Level"
+            android:text="@string/settings"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -180,7 +180,7 @@
             android:background="#52B856"
             android:onClick="mainMenuBtn"
             android:padding="5dp"
-            android:text="Main Menu"
+            android:text="@string/main_menu"
             android:textAlignment="center"
             android:textSize="20sp" />
 

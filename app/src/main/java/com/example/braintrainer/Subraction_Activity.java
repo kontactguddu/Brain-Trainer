@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.braintrainer.setting.Level_Selection;
+import com.example.braintrainer.setting.Operator;
+import com.example.braintrainer.setting.Setting;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -107,11 +111,11 @@ public class Subraction_Activity extends AppCompatActivity {
     }
 
     public void mainMenuBtn(View view){
-        Intent intent = new Intent(this, Second_page.class);
+        Intent intent = new Intent(this, Operator.class);
         startActivity(intent);
     }
-    public void levelSelectionBtn(View view){
-        Intent intent = new Intent(this, Level_Selection.class);
+    public void settingBtn(View view){
+        Intent intent = new Intent(this, Setting.class);
         startActivity(intent);
     }
     @Override
@@ -131,7 +135,7 @@ public class Subraction_Activity extends AppCompatActivity {
         playAgainButton = findViewById(R.id.playAgainButton);
         levelTextView = findViewById(R.id.levelTextView);
 
-        levelSelector = findViewById(R.id.levelSelectionButton);
+        levelSelector = findViewById(R.id.settingButton);
         mainMenuSelector = findViewById(R.id.mainMenuBtn);
     }
 }

@@ -4,67 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Level_Selection">
+    tools:context=".setting.Level_Selection">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#000000">
+        android:background="#31a4aa">
 
     <TextView
         android:id="@+id/brainTrainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Brain Trainer"
+        android:text="@string/brain_trainer"
         android:textColor="#fcd500"
         android:layout_weight="1"
         android:textSize="60dp"
         android:textAlignment="center"
         android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/warmupBtn"
+        <RadioGroup
+            android:id="@+id/radiogroup_1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="40sp"
-            android:onClick="warmup"
-            android:text="Warmup" />
+            android:layout_weight="5"
+            android:layout_margin="10dp"
+            >
 
-        <Button
-            android:id="@+id/easyBtn"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="40sp"
-            android:onClick="easy"
-            android:text="Easy" />
+            <RadioButton
+                android:id="@+id/warmupRadio"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/warmup"
+                android:textSize="40sp"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/mediumBtn"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="40sp"
-            android:onClick="medium"
-            android:text="Medium" />
+            <RadioButton
+                android:id="@+id/easyRadio"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/easy"
+                android:textSize="40sp"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="40sp"
-            android:text="Hard" />
+            <RadioButton
+                android:id="@+id/mediumRadio"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/medium"
+                android:textSize="40sp"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/tough"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="40sp"
-            android:text="Tough" />
+            <RadioButton
+                android:id="@+id/hardRadio"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/hard"
+                android:textSize="40sp"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1" />
 
+            <RadioButton
+                android:id="@+id/toughRadio"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/tough"
+                android:textSize="40sp"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1" />
+
+        </RadioGroup>
 
 
     </LinearLayout>

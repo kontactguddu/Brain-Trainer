@@ -33,7 +33,6 @@
                 android:id="@+id/welcomeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:text="Welcome "
                 app:layout_constraintBottom_toTopOf="@id/usernameText"
                 android:textSize="50sp"
@@ -45,7 +44,6 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toTopOf="@id/goImageButton"
                 android:text="Username"
-
                 android:textSize="35sp"
                 android:textStyle="bold" />
 

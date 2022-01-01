@@ -21,6 +21,7 @@
 
     <string name="correct">Correct :)</string>
     <string name="start">Start</string>
+    <string name="skip">Skip</string>
     <string name="change_level">Change Level</string>
     <string name="main_menu">Main Menu</string>
     <string name="warmup">Warmup</string>
@@ -39,6 +40,7 @@
     <string name="high_score">High Score</string>
     <string name="operation">Operation</string>
     <string name="settings">Settings</string>
+    <string name="page_is_under_constructio">Page is under construction</string>
 
 
 </resources>

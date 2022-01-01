@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void goButton(View view){
-        Intent i = new Intent(this, Operator.class);
+        Intent i = new Intent(this, Addition_Activity.class);
         startActivity(i);
 
     }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         GoogleSignInAccount signInAccount = GoogleSignIn.getLastSignedInAccount(this);
         if(signInAccount != null){
-            username.setText(signInAccount.getGivenName() + "\n" + signInAccount.getIdToken());
+            username.setText(signInAccount.getGivenName());
 
         }
 

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.braintrainer.MainActivity;
 import com.example.braintrainer.R;
 
 public class Setting extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class Setting extends AppCompatActivity {
     }
 
     public void stgLevel(View view) {
-        Intent i = new Intent(this, Level_Selection.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 

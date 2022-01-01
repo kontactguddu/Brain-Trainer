@@ -27,8 +27,8 @@ public class Operator extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void addition(View view) {
-        Intent i = new Intent(this, Addition_Activity.class);
-        startActivity(i);
-    }
+//    public void addition(View view) {
+//        Intent i = new Intent(this, Addition_Activity.class);
+//        startActivity(i);
+//    }
 }
